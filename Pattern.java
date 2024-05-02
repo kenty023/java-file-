@@ -20,7 +20,6 @@ public class RhymeChecker {
         } else {
             System.out.println(word2 + " does not rhyme with " + word1);
         }
-        
-        scanner.close();
+    
     }
 }
