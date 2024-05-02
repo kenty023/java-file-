@@ -23,7 +23,7 @@ public class RhymeDetector {
   public static boolean rhyme(String word1, String word2) {
     String sub = word1.substring(word1.length() - 2);
     String pattern = "[a-zA-Z]{1,2}" + sub + " ";
-    Matcher matcher = Pattern.compile("[a-zA-Z]{1,2}.*").matcher(word2);
+    Matcher matcher = Pattern.compile(pattern).matcher(word2);
     return matcher.matches();
   }
 }
